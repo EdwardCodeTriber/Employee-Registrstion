@@ -1,0 +1,20 @@
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-underline-position: below;
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    color: rgb(95, 95, 95);
+}
+.update-btn{
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+    background-color: rgb(136, 253, 136);
+}

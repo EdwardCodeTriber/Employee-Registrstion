@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    min-height: 100vh;
+    background-color: #fdfdfd;
+    font-family: 'General Sans', sans-serif;
+    background-image: url(registerIcon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background-color: whitesmoke;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav li{
+    margin: auto;
+    height: 50px;
+}
+.reg{
+    color: rgb(116, 116, 116);
+}
+.pic{
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+}
+nav li:last-child{
+    margin-left: auto;
+}
+nav a:hover{
+    background-color: rgb(240, 240, 240);
+}
+nav li:last-child{
+    margin-left: auto;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+.form-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-list input{
+    display: flex;
+    height: 30px;
+}
+.form-container label{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding: 0.25rem;
+    color: rgb(94, 94, 94);
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-color:red;
+}
+.login-btn{
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+    background-color: rgb(136, 253, 136);
+}
+.login-btn :hover{
+    background-color: rgb(25, 250, 25);
+}

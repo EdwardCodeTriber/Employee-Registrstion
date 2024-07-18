@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    min-height: 100vh;
+    background-color: #fdfdfd;
+    font-family: 'General Sans', sans-serif;
+    background-image: url(registerIcon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    background-color: whitesmoke;
+    border: 1px solid red;
+    border-radius: 8px;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+nav li{
+    
+}
+
+.reg{
+    color: rgb(116, 116, 116);
+}
+.logout{
+    justify-content: flex-end;
+    cursor: pointer;
+    height: 45px;
+    width: 55px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+    background-color: rgb(224, 81, 81);
+}
+.pic{
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+nav li:last-child{
+    margin-left: auto;
+}
+.employee-list{
+    
+}
+.nav-header{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 55px;
+height: 160px;
+
+}
+.nav-header li{
+    list-style-type: none;
+}
+.search-input{
+    background-color: transparent;
+    height: 25px;
+    border-radius: 8px;
+}
+.add-btn{
+cursor: pointer;
+padding: 1rem;
+margin: 0.5rem;
+border: none;
+border-radius: 8px;
+color: rgb(82, 82, 82);
+font-weight: 600;
+background-color: rgb(136, 253, 136);
+}
+/* .table-content{
+   
+}
+.table-info th{
+    right: auto;
+} */
+.table-content{
+    
+    border: 1px solid black;
+    /* justify-content: center;
+    align-items: center;
+    grid-template-columns:2.5rem 4.5rem 4.5rem 4.5rem 4.5rem 5.5rem;
+    grid-template-areas: 
+    "id" "name" "email" "phone" "pos" "image"; */
+}
+.flex-table{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid red;
+    margin: 0 45px;
+    border-radius: 8px;
+    background-color: wheat;
+
+}
+
+.table-info, th, td{
+    
+    border: 1px solid black ;
+}
+.employee-profile{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+.update-emp{
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+    background-color: rgb(136, 253, 136);
+}
+.delete-emp{
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+    background-color: rgb(243, 40, 40);
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.History-btn{
+    cursor: pointer;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    color: rgb(82, 82, 82);
+    font-weight: 600;
+    background-color: rgb(136, 253, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
