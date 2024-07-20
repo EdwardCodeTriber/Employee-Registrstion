@@ -1,15 +1,19 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 import { MdPersonSearch } from "react-icons/md";
 import './Home.css'
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    
   return (
     <div className='container'>
         
             <nav className='nav'>
                 <ul>
                     <li className='reg'>Registration System</li>
-                    <li><button className='logout'>Logout</button></li>
+                    <li><button className='logout' onClick={handleSubmit}>Logout</button></li>
                     <li><img className='pic' src='registerIcon.png'></img></li>
                 </ul>
             </nav>

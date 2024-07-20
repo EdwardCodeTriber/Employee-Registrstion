@@ -14,7 +14,6 @@ body{
 }
 nav{
     background-color: whitesmoke;
-    border: 1px solid red;
     border-radius: 8px;
 }
 nav ul{
@@ -25,10 +24,6 @@ nav ul{
     flex-wrap: wrap;
     margin-top: 25px;
 }
-nav li{
-    
-}
-
 .reg{
     color: rgb(116, 116, 116);
 }
@@ -84,36 +79,22 @@ color: rgb(82, 82, 82);
 font-weight: 600;
 background-color: rgb(136, 253, 136);
 }
-/* .table-content{
-   
-}
-.table-info th{
-    right: auto;
-} */
 .table-content{
-    
     border: 1px solid black;
-    /* justify-content: center;
-    align-items: center;
-    grid-template-columns:2.5rem 4.5rem 4.5rem 4.5rem 4.5rem 5.5rem;
-    grid-template-areas: 
-    "id" "name" "email" "phone" "pos" "image"; */
+    background-color: rgb(221, 221, 221);
+    border-radius: 8px;
 }
 .flex-table{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
-    border: 2px solid red;
+    justify-content: space-evenly;  
     margin: 0 45px;
-    border-radius: 8px;
-    background-color: wheat;
-
-}
-
-.table-info, th, td{
     
+}
+.table-info, th, td{
     border: 1px solid black ;
+    border-radius: 8px;
 }
 .employee-profile{
     border-radius: 50%;
@@ -156,4 +137,4 @@ background-color: rgb(136, 253, 136);
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
