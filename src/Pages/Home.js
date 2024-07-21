@@ -1,27 +1,25 @@
 import React from 'react'
-import {useNavigate} from 'react-router-dom'
+import Navbar from '../Components/Navbar';
+import '../Components/Home.css'
+import {Link, useNavigate} from 'react-router-dom'
 import { MdPersonSearch } from "react-icons/md";
-import './Home.css'
+
+
 
 const Home = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     
   return (
-    <div className='container'>
-        
-            <nav className='nav'>
-                <ul>
-                    <li className='reg'>Registration System</li>
-                    <li><button className='logout' >Logout</button></li>
-                    <li><img className='pic' src='registerIcon.png'></img></li>
-                </ul>
-            </nav>
+    
+    <div>
+
+            <Navbar></Navbar>
             <div className='employee-list'>
                 <ul className='nav-header'>
                     <li>Employee List</li>
                     <li><input className='search-input' placeholder='Search Employes...'></input><MdPersonSearch /></li>
-                    <li><button className='add-btn'>Add</button></li>
+                    <li className='add-btn'><Link to="/Registration">Add</Link></li>
                 </ul>
                 
                 <div className='flex-table'>
@@ -43,7 +41,7 @@ const Home = () => {
                         <td>COO</td>
                         <td>+27 67 759 7654</td>
                         <td><img className='employee-profile' src='prof.jpg'></img></td>
-                        <td><button className='update-emp'>Update</button></td>
+                        <td className='update-emp'><Link to="/Update">Update</Link></td>
                         <td><button className='delete-emp'>Delete</button></td>
                     </tr>
                 </table>

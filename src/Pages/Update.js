@@ -1,20 +1,12 @@
 import React from 'react'
-import './Update.css'
-import './Home.css'
+import Navbar from '../Components/Navbar'
+
 
 
 const Update = () => {
   return (
     <div>
-      <div className='nav'>
-            <nav>
-            <ul>
-                <li className='reg'>Registration System</li>
-                <li><button className='logout'>Logout</button></li>
-                <li><img className='pic' src='registerIcon.png'></img></li>
-            </ul>
-            </nav>
-        </div>
+      <Navbar></Navbar>
         <h1>Employee Update</h1>
         <div className='form-container'>
             <form autoComplete='off' className='form-list'>
