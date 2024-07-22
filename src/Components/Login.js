@@ -8,6 +8,7 @@ const Login = () => {
     const[password, setPassword] = useState('');
 
     const navigate = useNavigate();
+    //default admin login credentials
     const userName = localStorage.getItem('email') ? localStorage.getItem('email') : 'admin@admin1.com'
     const userPassword = localStorage.getItem('password') ? localStorage.getItem('password') : 'admin1'
     //

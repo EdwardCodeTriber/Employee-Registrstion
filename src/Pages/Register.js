@@ -33,7 +33,9 @@ const Registration = () => {
         localStorage.setItem('image', image)
         localStorage.setItem('position', position)
         localStorage.setItem('id', id)
+        alert("Added Successfully")
         navigate('/Home')
+        
        }
     }
 

@@ -8,7 +8,7 @@ import { MdPersonSearch } from "react-icons/md";
 
 const Home = () => {
     // const navigate = useNavigate();
-
+    
     
   return (
     
@@ -35,12 +35,35 @@ const Home = () => {
                         <th><span>Delete</span></th>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Edward Somo</td>
-                        <td>Edward@gmail</td>
-                        <td>COO</td>
-                        <td>+27 67 759 7654</td>
-                        <td><img className='employee-profile' src='prof.jpg'></img></td>
+                        <td>
+                            id:{" "}
+                            {localStorage.getItem("name")
+                            ? localStorage.getItem("name") : "NA"}
+                        </td>
+                        <td>
+                        name:{" "}
+                            {localStorage.getItem("name")
+                            ? localStorage.getItem("name") : "NA"}
+                        </td>
+                        <td>
+                        email:{" "}
+                            {localStorage.getItem("email")
+                            ? localStorage.getItem("email") : "NA"}
+                        </td>
+                        <td>
+                        position:{" "}
+                            {localStorage.getItem("position")
+                            ? localStorage.getItem("position") : "NA"}
+                        </td>
+                        <td>
+                        number:{" "}
+                            {localStorage.getItem("number")
+                            ? localStorage.getItem("number") : "NA"}
+                        </td>
+                        <td><img className='employee-profile'
+                        src =
+                        {localStorage.getItem("image")
+                        ? localStorage.getItem("image") : "NA"}></img></td>
                         <td className='update-emp'><Link to="/Update">Update</Link></td>
                         <td><button className='delete-emp'>Delete</button></td>
                     </tr>
