@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import Navbar from '../Components/Navbar'
 
 
@@ -29,7 +30,9 @@ const Update = () => {
                 <input type='text' required className='form-updatitem'></input>
                 <br></br>
             </form>
-            <button className='update-btn'>Update </button>
+            <button className='add-btn'>Update </button>
+            <br/>
+            <Link to="/Home">Cancle</Link>
           </div>
 
     </div>

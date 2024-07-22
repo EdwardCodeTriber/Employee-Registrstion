@@ -14,15 +14,12 @@ nav ul{
     color: rgb(116, 116, 116);
 }
 .logout{
-    justify-content: flex-end;
     cursor: pointer;
     height: 45px;
     width: 55px;
-    border: none;
-    border-radius: 8px;
     color: rgb(82, 82, 82);
     font-weight: 600;
-    background-color: rgb(224, 81, 81);
+    margin: 0 10px;
 }
 .pic{
     width: 70px;

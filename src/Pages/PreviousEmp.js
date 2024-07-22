@@ -4,9 +4,8 @@ import '../Components/Home.css';
 import { Link } from 'react-router-dom';
 import { MdPersonSearch } from "react-icons/md";
 
-const Home = () => {
+const History = () => {
     // varables
-  const [employees, setEmployees] = useState([]);
   const [deletedEmployees, setDeletedEmployees] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -20,8 +19,8 @@ const Home = () => {
   }, []);
 
   const handleDelete = (id) => {
-    const employeeToDelete = employees.find(employee => employee.id === id);
-    const updatedEmployees = employees.filter(employee => employee.id !== id);
+    const employeeToDelete = deletedEmployees.find(employee => employee.id === id);
+    const updatedEmployees = deletedEmployees.filter(employee => employee.id !== id);
     const updatedDeletedEmployees = [...deletedEmployees, employeeToDelete];
     // Storing new data or updated data
     setEmployees(updatedEmployees);
@@ -32,7 +31,7 @@ const Home = () => {
   };
 
   // Filter employess by search
-  const filteredEmployees = employees.filter(employee => 
+  const filteredEmployees = deletedEmployees.filter(employee => 
     employee.id.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -52,7 +51,7 @@ const Home = () => {
             />
             <MdPersonSearch />
           </li>
-          <li className='add-btn'><Link to="/Registration">Add</Link></li>
+          <li className='add-btn'><Link to="/Home">Back</Link></li>
         </ul>
 
         <div className='flex-table'>
@@ -70,21 +69,21 @@ const Home = () => {
               </tr>
             </thead>
             <tbody>
-                {/* pulls information from array to a TABLE with a filter for search object  */}
-              {filteredEmployees.map((employee, index) => (
+                {/* pulls information from array to a TABLE  */}
+              {filteredEmployees.map((deletedEmployees, index) => (
                 <tr key={index}>
-                  <td>{employee.id}</td>
-                  <td>{employee.name}</td>
-                  <td>{employee.email}</td>
-                  <td>{employee.position}</td>
-                  <td>{employee.number}</td>
+                  <td>{deletedEmployees.id}</td>
+                  <td>{deletedEmployees.name}</td>
+                  <td>{deletedEmployees.email}</td>
+                  <td>{deletedEmployees.position}</td>
+                  <td>{deletedEmployees.number}</td>
                   <td>
-                    {employee.image ? (
+                    {deletedEmployees.image ? (
                       <img className='employee-profile' src={employee.image} alt="Employee" />
                     ) : "NA"}
                   </td>
                   <td className='update-emp'><Link to="/Update">Update</Link></td>
-                  <td><button className='delete-emp' onClick={() => handleDelete(employee.id)}>Delete</button></td>
+                  <td><button className='delete-emp' onClick={() => handleDelete(deletedEmployees.id)}>Delete</button></td>
                 </tr>
               ))}
             </tbody>
@@ -92,10 +91,10 @@ const Home = () => {
         </div>
       </div>
       <div className='button'>
-        <Link className='History-btn' to="/History">History</Link>
+        <button className='History-btn'>History</button>
       </div>
     </div>
   );
 }
 
-export default Home;
+export default History;
