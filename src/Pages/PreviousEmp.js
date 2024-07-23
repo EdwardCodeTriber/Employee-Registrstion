@@ -6,6 +6,7 @@ import { MdPersonSearch } from "react-icons/md";
 
 const History = () => {
     // varables
+    const [employees, setEmployees] = useState([]);
   const [deletedEmployees, setDeletedEmployees] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
 
