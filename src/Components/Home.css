@@ -4,7 +4,7 @@
     border: none;
 }
 body{
-    min-height: 100vh;
+    min-height: 100%;
     background-color: #fdfdfd;
     font-family: 'General Sans', sans-serif;
     background-image: url(registerIcon.png);
@@ -44,21 +44,34 @@ font-weight: 600;
 background-color: rgb(136, 253, 136);
 }
 .table-content{
+    width: 100%;
+}
+.table-content th{
+    background-color: grey;
+}
+.table-content, th, td{
+    text-align: center;
+    padding: 5px;
     border: 1px solid black;
+    border-collapse: collapse;
     background-color: rgb(221, 221, 221);
-    border-radius: 8px;
+    
 }
 .flex-table{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;  
+    justify-content: center;  
     margin: 0 45px;
+    max-width: 100%;
+
     
 }
-.table-info, th, td{
+.table-info{
+    
     border: 1px solid black ;
-    border-radius: 8px;
+    border-collapse: collapse;
+    border: 8px;
 }
 .employee-profile{
     border-radius: 50%;
@@ -101,4 +114,34 @@ background-color: rgb(136, 253, 136);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 771px){
+    th{
+        display: none;
+    }
+    td{
+        display: block;
+    }
+    
+    /* td::before{
+        content: attr();
+    } */
+    td:nth-last-of-type(1)::before{
+        content: "id";
+    }
+    td:nth-last-of-type(2)::before{
+        content: "name";
+    }
+    td:nth-last-of-type(3)::before{
+        content: "email";
+    }
+    td:nth-last-of-type(4)::before{
+        content: "position";
+    }
+    td:nth-last-of-type(5)::before{
+        content: "number";
+    }
+    td:nth-last-of-type(6)::before{
+        content: "image";
+    }
 }

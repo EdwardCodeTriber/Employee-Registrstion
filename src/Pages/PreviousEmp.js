@@ -65,7 +65,6 @@ const History = () => {
                 <th>Position</th>
                 <th>Phone Number</th>
                 <th>Image</th>
-                <th><span>Action</span></th>
                 <th><span>Delete</span></th>
               </tr>
             </thead>
@@ -73,26 +72,22 @@ const History = () => {
                 {/* pulls information from array to a TABLE  */}
               {filteredEmployees.map((deletedEmployees, index) => (
                 <tr key={index}>
-                  <td>{deletedEmployees.id}</td>
-                  <td>{deletedEmployees.name}</td>
+                  <td>{deletedEmployees.id} : </td>
+                  <td>{deletedEmployees.name} </td>
                   <td>{deletedEmployees.email}</td>
                   <td>{deletedEmployees.position}</td>
                   <td>{deletedEmployees.number}</td>
                   <td>
                     {deletedEmployees.image ? (
-                      <img className='employee-profile' src={employee.image} alt="Employee" />
+                      <img className='employee-profile' src={deletedEmployees.image} alt="Employee" />
                     ) : "NA"}
                   </td>
-                  <td className='update-emp'><Link to="/Update">Update</Link></td>
                   <td><button className='delete-emp' onClick={() => handleDelete(deletedEmployees.id)}>Delete</button></td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-      </div>
-      <div className='button'>
-        <button className='History-btn'>History</button>
       </div>
     </div>
   );
